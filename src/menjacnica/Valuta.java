@@ -13,6 +13,9 @@ public class Valuta {
 	}
 	
 	public void setNaziv(String naziv) {
+		if(naziv.isEmpty() || naziv == null){
+			throw new RuntimeException("Greska! Naziv valute nije unet");
+		}
 		this.naziv = naziv;
 	}
 	
@@ -21,6 +24,12 @@ public class Valuta {
 	}
 	
 	public void setSkraceniNaziv(String skraceniNaziv) {
+		if(skraceniNaziv.isEmpty() || skraceniNaziv == null){
+			throw new RuntimeException("Greska! Skraceni naziv valute nije unet");
+		}
+		if(skraceniNaziv.length() > 3){
+			throw new RuntimeException("Greska! Skraceni naziv valute ne sme imati vise od 3 karaktera");
+		}
 		this.skraceniNaziv = skraceniNaziv;
 	}
 	
@@ -29,6 +38,9 @@ public class Valuta {
 	}
 	
 	public void setKursevi(ArrayList<Kurs> kursevi) {
+		if(kursevi == null){
+			throw new RuntimeException("Greska! Kursevi nisu dobro prosledjeni");
+		}
 		this.kursevi = kursevi;
 	}
 
