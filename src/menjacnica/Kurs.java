@@ -10,6 +10,14 @@ public class Kurs {
 	double srednji;
 	GregorianCalendar datum;
 	
+	public Kurs(double prodajni, double kupovni, double srednji, GregorianCalendar datum) {
+		super();
+		this.prodajni = prodajni;
+		this.kupovni = kupovni;
+		this.srednji = srednji;
+		this.datum = datum;
+	}
+
 	public double getProdajni() {
 		return prodajni;
 	}
