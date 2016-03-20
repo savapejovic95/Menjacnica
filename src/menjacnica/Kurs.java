@@ -9,7 +9,7 @@ public class Kurs {
 	double kupovni;
 	double srednji;
 	GregorianCalendar datum;
-
+	
 	public Kurs(double prodajni, double kupovni, double srednji, GregorianCalendar datum) {
 		super();
 		this.prodajni = prodajni;
