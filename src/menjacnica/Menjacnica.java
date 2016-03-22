@@ -24,6 +24,7 @@ public class Menjacnica implements MenjacnicaInterfejs {
 		
 		Kurs kurs = new Kurs(prodajni, kupovni, srednji, datum);
 		ArrayList<Kurs> kursevi;
+		//uslov da li valuta kursa postoji u listi ili je potrebno da se doda
 		boolean uslov = false;
 		
 		if(nazivValute == null || skraceniNaziv == null || datum == null)
